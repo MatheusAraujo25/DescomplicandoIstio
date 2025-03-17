@@ -29,12 +29,12 @@ O respositório está divido em pastas com base no que foi aprendido em cada dia
 - Mutual Transport Layer Security (MTLS) que pode ser aplicado de diferentes formas, por padrão ele é utilizado no sidecars e workloads.
 - Canary - Balanciador de cargar com base em pesos/percentual, exemplo de um caso de uso: saiu um versão nova de um componente, nós podemos testar a funcionabilidade dele sem aplicarmos isso para todos os usuários, apenas para uma pequena parcela deles com doses homeopaticas e validando a sua aceitação assim como seus possíveis bugs. Esse é um exemplo, mas, é possível usarmos esse recurso para diversas outras demandas.
 - Integração de coletores de métricas - Kiali, Grafana, Prometheus, dentre outros meios de coletar e visualizar métricas da aplicação de forma objetiva e simples que vem junto a ele.
-- Conseguimos testar o delay suportado pela nossa aplicação, ou seja, o tempo máximo de espera na entrega de um conteúdo antes que a aplicação retorne um erro/quebre. 
+- Conseguimos testar o delay suportado pela nossa aplicação, ou seja, o tempo máximo de espera na entrega de um conteúdo antes que a aplicação retorne um erro e quebre - Fault Injection. 
 <br>
 
 > [!NOTE]
 > ### Todos esses recursos foram explorados durante o curso:
->  MTLS ·Destination Rules · Policys · Workloads · Kiali · Grafana · Prometheus · ···········
+>  MTLS ·Destination Rules · Policys · Workloads · Kiali · Grafana · Prometheus · Fault Injection · Traffic Shifting · TCP Traffic Shifting · Ingres ········
 
 </br>
 
