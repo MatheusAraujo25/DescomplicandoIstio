@@ -5,7 +5,7 @@
 # Descomplicando o Istio  ⛵
 
 ### Sobre a organização das pastas 
-O respositório está divido em pastas com base no que foi aprendido em cada dia. Durante o processo de aprendizado foram feitas modificações no configuração default que vem do Istio. Segue uma orientação sobre a organização do repositório:  
+O respositório está divido em pastas com base no que foi aprendido em cada dia. Durante o processo de aprendizado foram feitas modificações na configuração default que vem do Istio. Segue uma orientação sobre a organização do repositório:  
 - 📁 day01and02
 - 📁 day-03
 - 📁 day-04
@@ -13,27 +13,28 @@ O respositório está divido em pastas com base no que foi aprendido em cada dia
 
 
 > [!NOTE]
-> Para usar o kubernetes na minha máquina pessoal usei o Kubernetes in Docker - **Kind**. Desse modo consegui usar o Kubernetes e o Istio.
+> Para usar o Kubernetes na minha máquina pessoal usei o Kubernetes in Docker - famoso **Kind**. Desse modo consegui usar o Kubernetes e o Istio.
 > Saiba mais na [Documentação](https://kind.sigs.k8s.io/).
 > Também deixo aqui o link para a [documentação](https://istio.io/latest/docs/setup/getting-started/#download) do Istio.
 </br>
 
 ### 🔑 Conceitos chaves: 
 > [!IMPORTANT]
-> O Istio não resolve problemas relacionados há performance, ou seja, se sua aplicação/cluster está bixado de nada adianta tentar resolver somente com o Istio. Ele atua na layer 7, também ajuda a termos um controle maior da nossa aplicação, além, de camadas a mais de segurança, tudo isso sem alterarmos o nosso cluster diretamente, só mexendo nas configurações do Istio.
+> O Istio não resolve problemas relacionados há performance, ou seja, se sua aplicação/cluster está bixado de nada adianta tentar resolver somente com o Istio. Ele atua na layer 7, também ajuda a termos um controle maior da nossa aplicação, além, de camadas a mais de segurança, tudo isso sem alterarmos o nosso cluster diretamente, só mexendo nas configurações do Istio. Para usarmos ele é recomendado que nossa aplicação esteja consolidade é bem estruturada. 
 </br>
 
 ## 📜  Resumo de alguns aprendizados obtidos durarante a realização das aulas:
-- Sidecar - Atua do lado da aplicação efetuando controle de trafego, balanciamento, e muito mais tudo isso de acordo com as configurações que definimos. 
+- Como funciona o sidecar - Atua do lado da aplicação, ou seja, ele pode ser usado para efetuar o controle de trafego, balanciamento de carga, e muito mais tudo isso de acordo com as configurações que definimos. 
 - Controle do tráfego usando policys, criando assim regras de egress (tráfego de saída) e ingress (tráfego de entrada).
-- Mutual Transport Layer Security (MTLS) que pode ser aplicado de diferentes formas.
-- Canary - Balancear a carga da aplicação de acordo com a necessidade, com base em um percentual, exemplo de um caso de uso: saiu um versão nova de um componente, nós podemos testar a funcionabilidade dele sem aplicarmos isso para todos os usuários, apenas para uma pequena parte deles com doses homeopaticas e validando a aceitação dele assim como seus possíveis bugs. Esse é um exemplo, mas, é possível usarmos esse recurso para diversas outras demandas.
-- Integração de coletores de métricas - Kiali, Grafana, Prometheus, dentre outros meios de coletar e visualizar métricas da aplicação de forma objetiva e simples. 
+- Mutual Transport Layer Security (MTLS) que pode ser aplicado de diferentes formas, por padrão ele é utilizado no sidecars e workloads.
+- Canary - Balanciador de cargar com base em pesos/percentual, exemplo de um caso de uso: saiu um versão nova de um componente, nós podemos testar a funcionabilidade dele sem aplicarmos isso para todos os usuários, apenas para uma pequena parcela deles com doses homeopaticas e validando a sua aceitação assim como seus possíveis bugs. Esse é um exemplo, mas, é possível usarmos esse recurso para diversas outras demandas.
+- Integração de coletores de métricas - Kiali, Grafana, Prometheus, dentre outros meios de coletar e visualizar métricas da aplicação de forma objetiva e simples que vem junto a ele.
+- Conseguimos testar o delay suportado pela nossa aplicação, ou seja, o tempo máximo de espera na entrega de um conteúdo antes que a aplicação retorne um erro/quebre. 
 <br>
 
 > [!NOTE]
 > ### Todos esses recursos foram explorados durante o curso:
-> Variables · Local variables · Data Block · Configuration Block · Module Block · OutputBlock ·  Providers ·  TLS Provider ·  Provisioners · Taints · Replace ·  Workspaces · Debugging · Modules · Module Source · Inputs · Terraform Workflow · terraform init · terraform plan · terraform destroy · State locking · Default Backend · Backend Authentication · Backeend Storage · Remote State · Secrets · Vault · Life Cycle · etc.
+>  MTLS ·Destination Rules · Policys · Workloads · Kiali · Grafana · Prometheus · ···········
 
 </br>
 
