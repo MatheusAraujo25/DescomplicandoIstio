@@ -20,12 +20,15 @@ O respositório está divido em pastas com base no que foi aprendido em cada dia
 
 ### 🔑 Conceitos chaves: 
 > [!IMPORTANT]
-> 
-> 
+> O Istio não resolve problemas relacionados há performance, ou seja, se sua aplicação/cluster está bixado de nada adianta tentar resolver somente com o Istio. Ela atua na layer 7, também ajuda a termos um controle maior da nossa aplicação, além, de uma camada a mais de segurança, pois, podemos usar o MTLS - Mutual Transport Layer Security de diferentes maneiras dentro da nossa aplicação. p
 </br>
 
 ## 📜  Resumo de alguns aprendizados obtidos durarante a realização das aulas:
-- . 
+- Sidecar - Atua do lado da aplicação efetuando controle de trafego, balanciamento, e muito mais tudo isso de acordo com as configurações que definimos. 
+- Controle do tráfego usando policys, criando assim regras de egress (tráfego de saída) e ingress (tráfego de entrada).
+- Mutual Transport Layer Security (MTLS) que pode ser aplicado de diferentes formas.
+- Canary - Balancear a carga da aplicação de acordo com a necessidade, com base em um percentual, exemplo de um caso de uso: saiu um versão nova de um componente, nós podemos testar a funcionabilidade dele sem aplicarmos isso para todos os usuários, apenas para uma pequena parte deles com doses homeopaticas e validando a aceitação dele assim como seus possíveis bugs. Esse é um exemplo, mas, é possível usarmos esse recurso para diversas outras demandas.
+- Integração de coletores de métricas - Kiali, Grafana, Prometheus, dentre outros meios de coletar e visualizar métricas da aplicação de forma objetiva e simples. 
 <br>
 
 > [!NOTE]
