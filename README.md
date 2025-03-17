@@ -20,7 +20,7 @@ O respositório está divido em pastas com base no que foi aprendido em cada dia
 
 ### 🔑 Conceitos chaves: 
 > [!IMPORTANT]
-> O Istio não resolve problemas relacionados há performance, ou seja, se sua aplicação/cluster está bixado de nada adianta tentar resolver somente com o Istio. Ela atua na layer 7, também ajuda a termos um controle maior da nossa aplicação, além, de uma camada a mais de segurança, pois, podemos usar o MTLS - Mutual Transport Layer Security de diferentes maneiras dentro da nossa aplicação. p
+> O Istio não resolve problemas relacionados há performance, ou seja, se sua aplicação/cluster está bixado de nada adianta tentar resolver somente com o Istio. Ele atua na layer 7, também ajuda a termos um controle maior da nossa aplicação, além, de camadas a mais de segurança, tudo isso sem alterarmos o nosso cluster diretamente, só mexendo nas configurações do Istio.
 </br>
 
 ## 📜  Resumo de alguns aprendizados obtidos durarante a realização das aulas:
