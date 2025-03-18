@@ -35,7 +35,7 @@ O respositório está divido em pastas com base no que foi aprendido em cada dia
 
 > [!NOTE]
 > ### Todos esses recursos foram explorados durante o curso:
->  MTLS ·Destination Rules · Policys · Workloads · Kiali · Grafana · Prometheus · Fault Injection · Traffic Shifting · TCP Traffic Shifting · Ingres · Bookinfo Application ·  ······
+>  MTLS ·Destination Rules · Policys · Workloads · Kiali · Grafana · Prometheus · Fault Injection · Traffic Shifting · TCP Traffic Shifting · Ingres · Bookinfo Application · 
 
 </br>
 
