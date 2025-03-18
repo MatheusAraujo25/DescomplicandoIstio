@@ -2,7 +2,7 @@
 <img align="right" src="https://github.com/user-attachments/assets/1c105e80-a49b-4670-b643-9fdbdbca4465" width="200"> 
 </br></br></br></br>
 
-# Descomplicando o Istio  ⛵
+# Descomplicando o Istio (service mesh)  ⛵
 
 ### Sobre a organização das pastas 
 O respositório está divido em pastas com base no que foi aprendido em cada dia. Durante o processo de aprendizado foram feitas modificações na configuração default que vem do Istio - Bookinfo Application. Segue uma orientação sobre a organização do repositório:  
@@ -35,7 +35,7 @@ O respositório está divido em pastas com base no que foi aprendido em cada dia
 
 > [!NOTE]
 > ### Todos esses recursos foram explorados durante o curso:
->  MTLS ·Destination Rules · Policys · Workloads · Kiali · Grafana · Prometheus · Fault Injection · Traffic Shifting · TCP Traffic Shifting · Ingres · Bookinfo Application ·······
+>  MTLS ·Destination Rules · Policys · Workloads · Kiali · Grafana · Prometheus · Fault Injection · Traffic Shifting · TCP Traffic Shifting · Ingres · Bookinfo Application ·  ······
 
 </br>
 
