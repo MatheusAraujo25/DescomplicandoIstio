@@ -1,0 +1,15 @@
+apiVersion: security.istio.io/v1
+kind: AuthorizationPolicy
+metadata:
+  name: nome-que-sera-exibido-na-policy
+  namespace: name-space-onde-sera-aplicado
+spec: 
+  selector:
+    matchLabels:
+      app: app-label
+      version: exemplo-v1
+  action: DENY 
+  rules: 
+  - from: 
+    - source: 
+        notNamespaces: ["namespaces-whatever"]
